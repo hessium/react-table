@@ -9,6 +9,7 @@ import {AddRecordForm} from "../../components/add-record-form/add-record-form.ts
 import {AppDispatch} from "../../store/store.ts";
 import {RootState} from "../../store/types.ts";
 import {Loader} from "../../shared/UI/spinner/loader.tsx";
+import {logout} from "../../store/auth-slice.ts";
 
 
 export function MainPage() {
@@ -109,8 +110,7 @@ export function MainPage() {
 
                 <Button
                     variant="outlined"
-                    onClick={() => {
-                    }}
+                    onClick={() => dispatch(logout())}
                 >
                     Выйти
                 </Button>
