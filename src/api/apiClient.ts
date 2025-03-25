@@ -1,7 +1,8 @@
 import axios from 'axios';
 import {getCookie} from "../shared/utils/cookies.ts";
 
-const baseURL = import.meta.env.VITE_BASE_URL;
+/*const baseURL = import.meta.env.VITE_BASE_URL;*/
+const baseURL = 'https://test.v5.pryaniky.com';
 
 export const api = axios.create({
     baseURL: baseURL,
